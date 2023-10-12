@@ -1,1 +1,26 @@
-var link = document.querySelector("link[rel*='icon']") || document.createElement('link');    link.type = 'image/x-icon';    link.rel = 'shortcut icon';    link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';    document.title='My Drive - Google Drive';    console.log(document.title);    document.getElementsByTagName('head')[0].appendChild(link);})();
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Iframe Content</title>
+</head>
+<body>
+    <h1>Change Iframe Content</h1>
+
+    <!-- Button to change iframe content -->
+    <button id="changeIframeButton">Change Iframe</button>
+
+    <!-- Iframe element with an initial source -->
+    <iframe id="myIframe" width="560" height="315" src="https://www.example.com" frameborder="0" allowfullscreen></iframe>
+
+    <script>
+        // JavaScript to change the iframe source
+        const iframe = document.getElementById('myIframe');
+        const button = document.getElementById('changeIframeButton');
+
+        button.addEventListener('click', function() {
+            // Change the iframe source to a new URL
+            iframe.src = 'https://www.newexample.com';
+        });
+    </script>
+</body>
+</html>
